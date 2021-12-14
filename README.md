@@ -34,6 +34,10 @@ Boilerplate to help developers to have a fast project configuration using the mo
 - PlopJS
 - Axios
 - SWC instead of babel
+- Prisma ORM 
+- React Icons
+- React Modal
+- React Spinner
 
 ---
 
@@ -52,6 +56,17 @@ Boilerplate to help developers to have a fast project configuration using the mo
 
 ```html
     yarn
+```
+#### Set enviroments variables
+1. Rename .env.example to .env
+2. Set DATABASE_URL variable (principal DB url)
+3. Set SHADOW_DATABASE_URL variable (shadow DB url)
+
+#### Migrate your database
+OBS: be sure that you're connected to your databases
+
+```js
+    npx prisma migrate dev
 ```
 
 #### Using Plop JS
