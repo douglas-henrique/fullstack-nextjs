@@ -1,1 +1,40 @@
-.container{}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  align-items: center;
+  img {
+    border-radius: 100px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    label {
+      font-weight: bold;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    label:last-child {
+      font-weight: normal;
+      margin-top: 10px;
+    }
+  }
+
+  svg {
+    margin-left: auto;
+    transition: filter 0.2s;
+  }
+
+  svg:hover {
+    cursor: pointer;
+    filter: brightness(0.5);
+  }
+
+  .spinner {
+    margin-left: auto;
+  }
+}

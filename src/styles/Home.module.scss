@@ -1,37 +1,85 @@
 .main {
   display: flex;
   flex-direction: column;
-  border: 1px solid #fff;
-
   height: 90vh;
+ 
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    max-height: 70%;
+    overflow-y: auto;
+    align-items: center;
+    margin-top: 10%;
 
-  h1 {
-    margin-top: 10vh;
-  }
-  p {
-    margin-top: 20px;
+    p {
+      margin-top: 5%;
+    }
+  
+    button {
+      margin-left: auto;
+      height: 20px;
+      background-color: purple;
+      color: #fff;
+      border: 0px;
+      border-radius: 10px;
+      height: 50px;
+      width: 200px;
+      font-weight: bold;
+      transition: filter 0.2s;
+    }
+
+    button:hover {
+      filter: brightness(0.9);
+    }
   }
 }
 
 .listContainer {
-  border: 1px solid #fff;
   display: flex;
   flex-direction: row;
-
-  
+  max-height: 70%;
+  overflow-y: auto;
+  margin-top: 20px;
 
   ul {
     margin-top: 2rem;
     list-style-type: none;
     margin-bottom: 20px;
+    min-height: 200px;
+    min-width: 99%;
+  }  
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  input,
+  button {
+    height: 50px;
+    border-radius: 5px;
+    padding: 3%;
   }
 
-  ul :is(li){
-    margin: 10px;
-    display: flex;
+  input + input,
+  button {
+    margin-top: 20px;
   }
 
   button {
-    margin-left: auto;
+    background-color: purple;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    transition: filter 0.2s;
+  }
+
+  button:hover {
+    filter: brightness(0.9);
+  }
+
+  span {
+    margin: 2%;
   }
 }

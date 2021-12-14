@@ -1,0 +1,42 @@
+.Modal {
+  position: absolute;
+  min-height: 300px;
+  min-width: 30%;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background-color: #202023;
+  border-radius: 10px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-left: auto;
+      background-color: transparent;
+      border: 0;
+      transition: filter 0.2s;
+    }
+
+    button:hover {
+      filter: brightness(0.5);
+    }
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(49, 49, 52, 0.5);
+}

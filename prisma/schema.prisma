@@ -19,5 +19,5 @@ model User {
   updatedAt DateTime @updatedAt
   name      String
   userName  String
-  password  String
+  avatar    String?
 }
